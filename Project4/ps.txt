@@ -1,0 +1,7 @@
+    PID TTY          TIME CMD
+    215 ?        00:00:01 tmux
+    216 pts/1    00:00:00 bash
+    217 pts/1    00:00:00 bash
+    442 ?        00:00:01 vfs-worker {"pi
+    833 pts/0    00:00:00 tmux
+    870 pts/1    00:00:00 ps

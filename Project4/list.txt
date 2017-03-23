@@ -1,0 +1,2 @@
+-rwx------ 1 ubuntu ubuntu 94 Mar 10 17:01 >
+-rw-r--r-- 1 ubuntu ubuntu 97 Mar 10 17:07 list.txt

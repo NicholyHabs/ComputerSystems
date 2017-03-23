@@ -1,0 +1,85 @@
+Basic Regular Expression Syntax
+===============================
+
+The regex is typically enclosed in quotes to mark it as a single string
+
+Individual characters are matched exactly
+
+    'cat' matches all instances of the consecutive letters cat
+    
+Character sets are enclosed in square brackets
+
+    '[aeiou]' matches any vowel
+    any instance of any vowel in any word 
+Multiple things may be concatenated
+
+    'x[aeiou]' matches x followed by any vowel
+   x followed by any instance of any vowel in any word 
+
+A dash may indicate sequential groupings
+
+    '[a-z]' indicates all letters lowercase a through z
+    '[0-9]' indicates all digits
+
+^ matches the beginning of a line
+
+    '^[aeiou]' matches a line that starts with any vowel
+    
+$ matches the end of a line
+
+    '[aeiou]$' matches a line that ends with any vowel
+
+[^ ] matches anything *not* in the brackets
+
+    'q[^u]' matches anything that starts with q- but not qu-
+    
+\| may be used to indicate a choice of two expressions
+
+    '^x\|x$' matches lines starting or ending with x
+    
+* is the Kleene closure: matches 0 or more instances
+
+    '^he[a-z]*he$' matches all lines starting and ending with he
+    '^[^aeiou]*$ matches all lines with no vowels
+    
++ matches at least one instance
+
+? matches 0 or 1 instances but no more
+
+\{n\} matches exactly n instances
+
+    '[aeiou]\{5\}' finds all strings of five vowels
+    
+\{n,k\} matches at least n but not more than k instances
+
+\{n,\} matches n or more instances
+
+. matches any character
+
+    '^..$' matches all two character lines
+    
+    
+Practice
+========
+
+Find all words containing zz
+
+Find all words containing q followed by a consonant
+
+Find all words that start with x followed by a consonant
+
+Find all words that start with 3 vowels
+
+Find all words that start with five or more consonants
+
+Find all words ending in -orilla
+
+Find all words that start and end with a and contain an x
+
+Write a regular expression for phone numbers of the form
+   xxx-xxx-xxxx
+
+What if we want the - to be optional?
+
+What if we want the first three digits to be enclosed in ( )?
+
